@@ -18,7 +18,7 @@ const Cocktails = () => {
 
     // dispatch(triggerDefault());
     // dispatch({ type: "stupid" });
-  }, []);
+  }, [dispatch]);
 
   if (state.loading) {
     return <h1>Loading...</h1>;

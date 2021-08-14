@@ -10,7 +10,7 @@ const SingleCocktail = () => {
 
   useEffect(() => {
     dispatch(fetchSingleCocktails(id));
-  }, [id]);
+  }, [id, dispatch]);
 
   if (state.loading) {
     return <h1>Loading...</h1>;
@@ -26,35 +26,29 @@ const SingleCocktail = () => {
           strCategory: category,
           strGlass: glass,
           strInstructions: instructions,
-          strIngredient1,
-          strIngredient2,
-          strIngredient3,
-          strIngredient4,
-          strIngredient5,
         } = details;
 
         return (
           <section key={details.idDrink}>
             <Link to="/"> Back Home </Link>
             <h2>{name}</h2>
-            <div className="drink">
+            <div>
               <img src={image} alt={name}></img>
-              <div className="drink-info">
+              <div>
                 <p>
-                  <span className="drink-data">name :</span> {name}
+                  <span>name :</span> {name}
                 </p>
                 <p>
-                  <span className="drink-data">category :</span> {category}
+                  <span>category :</span> {category}
                 </p>
                 <p>
-                  <span className="drink-data">info :</span> {info}
+                  <span>info :</span> {info}
                 </p>
                 <p>
-                  <span className="drink-data">glass :</span> {glass}
+                  <span>glass :</span> {glass}
                 </p>
                 <p>
-                  <span className="drink-data">instructons :</span>{" "}
-                  {instructions}
+                  <span>instructons :</span> {instructions}
                 </p>
               </div>
             </div>
