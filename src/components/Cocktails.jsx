@@ -14,10 +14,6 @@ import {
 } from "@material-ui/core";
 import useStyles from "../style";
 
-const onSubmitForm = (e) => {
-  e.preventDefault();
-};
-
 const Cocktails = () => {
   const classes = useStyles();
   const dispatch = useDispatch(); // ! can be only used insde component
