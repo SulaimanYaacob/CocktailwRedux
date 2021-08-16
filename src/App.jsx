@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Cocktails from "./components/Cocktails";
 import SingleCocktail from "./pages/SingleCocktail";
 import Error from "./pages/Error";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <Home />
             <Cocktails />
           </Route>
           <Route path="/cocktail/:id">
