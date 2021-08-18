@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     paddingTop: "56.25%",
   },
+  cardContent: {
+    flexGrow: 1,
+  },
 }));
 
 export default useStyles;

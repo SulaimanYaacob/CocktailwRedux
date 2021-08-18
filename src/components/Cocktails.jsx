@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCocktails } from "../store/actions";
 import { Link } from "react-router-dom";
+import useStyles from "../style";
 import {
   Card,
   CardActions,
@@ -12,7 +13,6 @@ import {
   CssBaseline,
   CardMedia,
 } from "@material-ui/core";
-import useStyles from "../style";
 
 const Cocktails = () => {
   const classes = useStyles();
